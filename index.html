@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign up | Example</title>
+        <link rel="icon" type="image/x-icon" href="asset/odin-lined.png" />
+        <link rel="stylesheet" href="main.css" />
+        <script defer src="main.js" type="module"></script>
+    </head>
+    <body>
+        <aside>
+            <div class="blur">
+                <h1 class="title">
+                    <img src="asset/odin-lined.png" />  Example
+                </h1>
+                <span></span>
+                <footer>
+                    Image by
+                    <a href="https://unsplash.com/photos/ePpaQC2c1xA">Jerry Zhang (Unsplash)</a>
+                </footer>
+            </div>
+        </aside>
+        
+        <main>
+            <p class="large">
+                Here is an example sign-up page as a front-end example.
+                <br/>
+                Note that the form does not send data anywhere.
+            </p>
+
+            <form id="Form" action="#">
+                <p class="large">Let's do this!</p>
+                <label>
+                    First name *
+                    <input name="first_name" required placeholder="Henry" />
+                </label>
+                <label>
+                    Last name *
+                    <input name="last_name" required placeholder="Stevens" />
+                </label>
+                <br/>
+                <label>
+                    Email *
+                    <input name="email" type="email" required placeholder="email@domain.com" />
+                </label>
+                <label>
+                    Phone Number
+                    <input name="phone_number" type="tel" pattern="[0-9]+" />
+                </label>
+                <br />
+                <label>
+                    Password *
+                    <input id="FormPassword" name="password" type="password" minlength="8" required placeholder="Password" />
+                </label>
+                <label>
+                    Confirm Password *
+                    <input id="FormPasswordConfirm" type="password" required placeholder="Confirm" />
+                </label>
+            </form>
+            
+            <div>
+                <button id="Submit" form="Form" type="submit">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </main>
+    </body>
+</html>
